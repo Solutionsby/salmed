@@ -15,7 +15,7 @@ export const MainNavigation = () => {
   return (
     <div className="navigation-wrapper">
       <div className="navigation-logo-wrapper">
-        <Link to="/">
+        <Link to="/" onClick={() => clickToggle(setActive, active)}>
           <div className="navigation-logo"></div>
         </Link>
       </div>
@@ -27,7 +27,10 @@ export const MainNavigation = () => {
         <div className={active ? "bars open" : "bars"}></div>
         <div className={active ? "bars open" : "bars"}></div>
       </div>
-      <MenuNavigation isActive={active} />
+      <MenuNavigation
+        isActive={active}
+        toggle={() => clickToggle(setActive, active)}
+      />
     </div>
   );
 };

@@ -4,12 +4,42 @@
   display: flex;
   position: fixed;
   top: 14vh;
-  bottom: 15vh;
+  bottom: 0;
   right: -1000px;
   width: 100%;
+  justify-content: center;
+
   background-color: #fff;
   transition: 1s;
   &.open {
     right: 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    list-style: none;
+    li {
+      a {
+        color: $primary-color;
+        font-family: $font;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .menu-contact-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+          font-size: 16px;
+          width: 45%;
+        }
+      }
+    }
   }
 }
