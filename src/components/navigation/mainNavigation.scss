@@ -1,0 +1,50 @@
+@import "../../assets/constant.scss";
+
+.navigation-wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15vh;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  .navigation-logo-wrapper {
+    margin-left: 2vw;
+    width: 35%;
+    height: 90%;
+    background-image: url("/public/img/logo/logo-salmed.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+  }
+  .burger-menu-wrapper {
+    display: flex;
+    height: 50%;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    margin-right: 5vw;
+    &.open {
+      justify-content: center;
+    }
+    .bars {
+      width: 60%;
+      height: 2px;
+      background-color: $primary-color;
+      transition: 1s;
+      &.open {
+        transform: rotate(45deg) translateY(2px);
+      }
+    }
+    .bars.open:nth-of-type(2) {
+      opacity: 0;
+    }
+    .bars.open:nth-of-type(3) {
+      transform: rotate(135deg) translateY(2px);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../assets/constant.scss";
+
+.menu-navigation {
+  display: flex;
+  position: fixed;
+  top: 14vh;
+  bottom: 15vh;
+  right: -1000px;
+  width: 100%;
+  background-color: #fff;
+  transition: 1s;
+  &.open {
+    right: 0;
+  }
+}
