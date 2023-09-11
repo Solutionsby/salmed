@@ -18,6 +18,7 @@ dist-ssr
 .idea
 .DS_Store
 public/*
+src/db/*
 *.suo
 *.ntvs*
 *.njsproj
