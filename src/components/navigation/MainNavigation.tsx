@@ -11,11 +11,16 @@ export const MainNavigation = () => {
   ) => {
     setter(!toggle);
   };
+  const closeMenu = () => {
+    if (active === true) {
+      setActive(false);
+    }
+  };
 
   return (
     <div className="navigation-wrapper">
       <div className="navigation-logo-wrapper">
-        <Link to="/" onClick={() => clickToggle(setActive, active)}>
+        <Link to="/" onClick={closeMenu}>
           <div className="navigation-logo"></div>
         </Link>
       </div>
