@@ -1,5 +1,7 @@
 import "./menuNavigation.scss";
 import contact from "../../db/contact.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -28,9 +30,18 @@ export const MenuNavigation: React.FC<{
         </li>
         <li>
           <div className="menu-contact-wrapper">
-            <a href={`tel:+48${contact.telephone}`}>{contact.telephone}</a>
-
-            <a href={`mailto:${contact.email}`}>{contact.email}</a>
+            <div className="contat-phone contact-elements">
+              <a href={`tel:+48${contact.telephone}`}>
+                <FontAwesomeIcon icon={faMobileAlt} />
+                {contact.telephone}
+              </a>
+            </div>
+            <div className="contact-mail contact-elements ">
+              <a href={`mailto:${contact.email}`}>
+                <FontAwesomeIcon icon={faEnvelope} />
+                {contact.email}
+              </a>
+            </div>
           </div>
         </li>
       </ul>
