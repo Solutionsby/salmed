@@ -1,4 +1,11 @@
 {
+  "services": {
+    "descryption.one": "Wizyta infekcyjna",
+    "descryption.two": "Wizyta dzieci zdrowych",
+    "name.one": "Pediatria",
+    "name.two": "Internista",
+    "more": "więcej..."
+  },
   "navigation": {
     "aboutMe": "O mnie",
     "priceList": "Cennik",
