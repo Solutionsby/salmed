@@ -2,9 +2,21 @@
   "services": {
     "descryption.one": "Wizyta infekcyjna",
     "descryption.two": "Wizyta dzieci zdrowych",
+    "descryption.three": "Wizyta bez objawów infekcji",
     "name.one": "Pediatria",
     "name.two": "Internista",
     "more": "więcej..."
+  },
+  "servicesContent": {
+    "visitOneHeader": "Wizyta Infekcyjna",
+    "visitOne": "Wizyta odbywają się wyłącznie w trybie stacjonarnym. Pacjent > 2r.ż proszony jest o zakrywaniu ust ORAZ nosa maską ochronną",
+    "visitPriceWekk": "Wizyta w tygodniu",
+    "visitPriceWeekend": "Wizyta w Weekend",
+    "visitTwoHeader": "Wizyty dzieci zdrowych",
+    "visitTwo": "preferowana wizyta stacjonarna ale możliwość przeprowadzenia wizytę w trybie e-wizyty (teleporady lub online)",
+    "vistiThreeHeader": "Wizyty internistyczne bez objawów infekcji.",
+    "visitThree": "Wizyta Internistyczna dla osób powyżej 18 roku życia. Wizyta dla osób z objawami infekcji",
+    "visitFour": "Wizyta Internistyczna dla osób powyżej 18 roku życia. Wizyta bez objawów infekcji "
   },
   "navigation": {
     "aboutMe": "O mnie",

@@ -1,4 +1,4 @@
-import { ServicePage } from "../servicesPage/servicesPage";
+import { ServicePage } from "../servicesPage/ServicesPage";
 import { Slider } from "../slider/Slider";
 import "./mainPage.scss";
 

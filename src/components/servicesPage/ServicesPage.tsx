@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { services } from "../db/services.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import "./servicePage.scss";
 import { Link } from "react-router-dom";
+import "./servicePage.scss";
 
 export const ServicePage = () => {
   const { t } = useTranslation("translation");

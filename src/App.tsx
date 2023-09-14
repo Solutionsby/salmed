@@ -7,17 +7,22 @@ import { Footer } from "./components/footer/Footer";
 import { AbouteMe } from "./components/aboutMe/AbouteMe";
 import { PriceList } from "./components/ priceList/PriceList";
 import { Contact } from "./components/ contact/Contact";
+import { PediatricsOne } from "./components/servicesPage/PediatricsOne/PediatricsOne";
+import { PediatricsTwo } from "./components/servicesPage/PediatricsTwo/PediatricsTwo";
+import { InternistOne } from "./components/servicesPage/InternistOne/InternistOne";
+import { InternistTwo } from "./components/servicesPage/InternistTwo/InternistTwo";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faUserMd,
   faBriefcaseMedical,
+  faLaptopMedical,
+  faStethoscope,
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
 // Importuje tłumaczenia
 // import translationEN from "./locales/en/translation.json";
 import translationPL from "./locales/pl/translation.json";
-import { PediatricsOne } from "./components/servicesPage/PediatricsOne/PediatricsOne";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -30,7 +35,7 @@ i18n.use(initReactI18next).init({
     escapeValue: false,
   },
 });
-library.add(faUserMd, faBriefcaseMedical);
+library.add(faUserMd, faBriefcaseMedical, faLaptopMedical, faStethoscope);
 
 function App() {
   return (
@@ -43,6 +48,9 @@ function App() {
           <Route path="priceList" element={<PriceList />} />
           <Route path="contact" element={<Contact />} />
           <Route path="pedriatic-indection" element={<PediatricsOne />} />
+          <Route path="pedriatic-healthy" element={<PediatricsTwo />} />
+          <Route path="internist-indection" element={<InternistOne />} />
+          <Route path="internist-healthy" element={<InternistTwo />} />
         </Routes>
         <Footer />
       </div>

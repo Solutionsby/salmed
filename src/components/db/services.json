@@ -12,7 +12,21 @@
       "fontAwsomeIcon": "fa-briefcase-medical",
       "nameKey": "services.name.one",
       "descriptionKey": "services.descryption.two",
-      "linkPath": "pedriatic-indection"
+      "linkPath": "pedriatic-healthy"
+    },
+    {
+      "id": 3,
+      "fontAwsomeIcon": "fas fa-laptop-medical",
+      "nameKey": "services.name.two",
+      "descriptionKey": "services.descryption.one",
+      "linkPath": "internist-indection"
+    },
+    {
+      "id": 4,
+      "fontAwsomeIcon": "fas fa-stethoscope",
+      "nameKey": "services.name.two",
+      "descriptionKey": "services.descryption.three",
+      "linkPath": "internist-healthy"
     }
   ]
 }

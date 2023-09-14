@@ -1,0 +1,18 @@
+{
+  "pediatricOne": {
+    "pediatricOneWeek": "150 zł",
+    "pediatricOneWeekend": "300 zł"
+  },
+  "pediatricTwo": {
+    "pediatricOneWeek": "200 zł",
+    "pediatricOneWeekend": "400 zł"
+  },
+  "internistOne": {
+    "internistOneWeek": "150 zł",
+    "internistOneWeekend": "300 zł"
+  },
+  "internistTwo": {
+    "internistTwoeWeek": "250 zł",
+    "internistTwoWeekend": "500 zł"
+  }
+}

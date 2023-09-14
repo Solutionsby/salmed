@@ -5,24 +5,42 @@
   .service-component {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0;
     .services-component-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       background-color: $primary-color;
-      height: 48%;
+      height: 25vh;
       width: 80%;
+      transition: 0.8s;
+      &:hover {
+        box-sizing: border-box;
+        border: 2px solid $primary-color;
+        background-color: #fff;
+        .services-links {
+          .service-icon {
+            color: black;
+          }
+          .service-texts {
+            color: black;
+          }
+        }
+      }
       .services-links {
         height: 100%;
         width: 100%;
         .service-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           height: 50%;
           width: 100%;
-          font-size: 35px;
+          font-size: 45px;
           overflow: hidden;
           color: white;
         }
@@ -31,6 +49,7 @@
           flex-direction: column;
           justify-content: space-between;
           height: 50%;
+          font-size: 18px;
           color: white;
           p {
             font-size: 10px;
