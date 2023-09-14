@@ -4,7 +4,7 @@ import i18n from "i18next";
 import { MainPage } from "./components/mainPage/MainPage";
 import { MainNavigation } from "./components/navigation/MainNavigation";
 import { Footer } from "./components/footer/Footer";
-import { AbouteMe } from "./components/aboutMe/AbouteMe";
+import { AboutMe } from "./components/aboutMe/AbouteMe";
 import { PriceList } from "./components/ priceList/PriceList";
 import { Contact } from "./components/ contact/Contact";
 import { PediatricsOne } from "./components/servicesPage/PediatricsOne/PediatricsOne";
@@ -44,7 +44,7 @@ function App() {
         <MainNavigation />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="about" element={<AbouteMe />} />
+          <Route path="about" element={<AboutMe />} />
           <Route path="priceList" element={<PriceList />} />
           <Route path="contact" element={<Contact />} />
           <Route path="pedriatic-indection" element={<PediatricsOne />} />
