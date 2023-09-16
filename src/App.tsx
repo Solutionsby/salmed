@@ -17,6 +17,9 @@ import {
   faBriefcaseMedical,
   faLaptopMedical,
   faStethoscope,
+  faMobileAlt,
+  faEnvelope,
+  faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
@@ -35,7 +38,15 @@ i18n.use(initReactI18next).init({
     escapeValue: false,
   },
 });
-library.add(faUserMd, faBriefcaseMedical, faLaptopMedical, faStethoscope);
+library.add(
+  faUserMd,
+  faBriefcaseMedical,
+  faLaptopMedical,
+  faStethoscope,
+  faMobileAlt,
+  faEnvelope,
+  faMapMarkerAlt
+);
 
 function App() {
   return (
