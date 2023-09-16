@@ -5,23 +5,28 @@ import { MenuNavigation } from "./ManuNavigation/MenuNavigation";
 
 export const MainNavigation = () => {
   const [active, setActive] = useState(false);
-  const clickToggle = (
+  const menuSwitch = (
     setter: React.Dispatch<React.SetStateAction<boolean>>,
-    toggle: boolean
+    toggle: boolean,
+    onlyClose: boolean
   ) => {
-    setter(!toggle);
+    if (onlyClose) {
+      setter(false);
+    } else {
+      setter(!toggle);
+    }
   };
 
   return (
     <div className="navigation-wrapper">
       <div className="navigation-logo-wrapper">
-        <Link to="/" onClick={() => clickToggle(setActive, active)}>
+        <Link to="/" onClick={() => menuSwitch(setActive, active, true)}>
           <div className="navigation-logo"></div>
         </Link>
       </div>
       <div
         className={active ? "burger-menu-wrapper open" : "burger-menu-wrapper"}
-        onClick={() => clickToggle(setActive, active)}
+        onClick={() => menuSwitch(setActive, active, false)}
       >
         <div className={active ? "bars open" : "bars"}></div>
         <div className={active ? "bars open" : "bars"}></div>
@@ -29,7 +34,7 @@ export const MainNavigation = () => {
       </div>
       <MenuNavigation
         isActive={active}
-        toggle={() => clickToggle(setActive, active)}
+        toggle={() => menuSwitch(setActive, active, false)}
       />
     </div>
   );

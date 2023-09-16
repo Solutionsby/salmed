@@ -1,4 +1,27 @@
 {
+  "services": {
+    "descryption.one": "Wizyta infekcyjna",
+    "descryption.two": "Wizyta dzieci zdrowych",
+    "descryption.three": "Wizyta bez objawów infekcji",
+    "name.one": "Pediatria",
+    "name.two": "Internista",
+    "more": "więcej..."
+  },
+  "servicesContent": {
+    "visitOneHeader": "Wizyta Infekcyjna",
+    "visitOne": "Wizyta odbywają się wyłącznie w trybie stacjonarnym. Pacjent > 2r.ż proszony jest o zakrywaniu ust ORAZ nosa maską ochronną",
+    "visitPriceWekk": "Wizyta w tygodniu",
+    "visitPriceWeekend": "Wizyta w Weekend",
+    "visitTwoHeader": "Wizyty dzieci zdrowych",
+    "visitTwo": "preferowana wizyta stacjonarna ale możliwość przeprowadzenia wizytę w trybie e-wizyty (teleporady lub online)",
+    "vistiThreeHeader": "Wizyty internistyczne bez objawów infekcji.",
+    "visitThree": "Wizyta Internistyczna dla osób powyżej 18 roku życia. Wizyta dla osób z objawami infekcji",
+    "visitFour": "Wizyta Internistyczna dla osób powyżej 18 roku życia. Wizyta bez objawów infekcji "
+  },
+  "aboutMeSection": {
+    "name": "Adam Salbert",
+    "aboutMeDescription": "Jestem absolwentem Uniwersytetu Medycznego w Gdańsku. Szkolenie specjalizacyjne kończę w zakresie Medycyny Rodzinnej. Doświadczenie zawodowe zdobywam podczas codziennej pracy w centrum opieki zdrowotnej,  w ramach prywatnej praktyki lekarskiej w Polsce oraz w Skandynawii. Przyjmuje wszystkich pacjentów z podejściem holistycznym z myślą o poprawie ogólnego stanu zdrowia. Umówienie wizyty jest możliwe w języku polskim, angielskim, szwedzkim, oraz norweskim."
+  },
   "navigation": {
     "aboutMe": "O mnie",
     "priceList": "Cennik",

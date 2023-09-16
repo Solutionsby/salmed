@@ -1,0 +1,16 @@
+@import "../../assets/constant.scss";
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $primary-color;
+  height: 5vh;
+  width: 40%;
+  transition: 0.8s;
+  margin: 10px 0;
+  &:hover {
+    border-color: black;
+    background-color: $primary-color;
+    color: white;
+  }
+}
