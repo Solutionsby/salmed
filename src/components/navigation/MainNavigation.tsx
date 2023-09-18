@@ -34,6 +34,7 @@ export const MainNavigation = () => {
       </div>
       <MenuNavigation
         isActive={active}
+        setActive={setActive}
         toggle={() => menuSwitch(setActive, active, false)}
       />
     </div>

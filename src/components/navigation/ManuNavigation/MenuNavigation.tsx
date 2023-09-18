@@ -9,15 +9,27 @@ import { Link } from "react-router-dom";
 export const MenuNavigation: React.FC<{
   isActive: boolean;
   toggle: () => void;
-}> = ({ isActive, toggle }) => {
+  setActive: (isActive: boolean) => void;
+}> = ({ isActive, setActive, toggle }) => {
   const { t } = useTranslation("translation");
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setActive(false);
+    }
+  };
   return (
     <div className={isActive ? "menu-navigation open" : "menu-navigation"}>
       <ul>
+        <li onClick={() => scrollToSection("aboutMeSection")}>
+          {t("navigation.aboutMe")}
+        </li>
         <li>
-          <Link to="about" onClick={toggle}>
-            {t("navigation.aboutMe")}
-          </Link>
+          <li onClick={() => scrollToSection("serviceSection")}>
+            {t("navigation.services")}
+          </li>
         </li>
         <li>
           <Link to="priceList" onClick={toggle}>
