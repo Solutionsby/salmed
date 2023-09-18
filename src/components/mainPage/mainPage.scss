@@ -1,7 +1,8 @@
+@import "../../assets/constant.scss";
 .main-page-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: $nav-height;
   width: 100%;
   background-color: #fff;
   .main-page-header {

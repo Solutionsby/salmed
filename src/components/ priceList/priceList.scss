@@ -19,6 +19,10 @@
       gap: 5px;
       margin: 10px 0;
       width: 98%;
+      h4 {
+        font-family: $font;
+        color: #000;
+      }
       .price-list-content {
         display: flex;
         justify-content: space-between;
@@ -26,6 +30,8 @@
         width: 98%;
         p {
           flex-grow: 1;
+          font-family: $secendary-font;
+          color: #000;
         }
         .line {
           height: 2px;

@@ -26,6 +26,7 @@ import "./App.css";
 // Importuje tłumaczenia
 // import translationEN from "./locales/en/translation.json";
 import translationPL from "./locales/pl/translation.json";
+import ScrollToTopEffect from "./assets/ScrollToTop";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -53,6 +54,7 @@ function App() {
     <Router>
       <div className="app-wrapper">
         <MainNavigation />
+        <ScrollToTopEffect />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="about" element={<AboutMe />} />

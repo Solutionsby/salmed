@@ -6,15 +6,18 @@
   transition: 0.8s;
   margin: 10px 0;
   background-color: white;
-  a {
+  button.btn-mydr-pp {
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     border: 1px solid black;
+    background: none;
+    background-position: 0;
     color: $primary-color;
     width: 100%;
     height: 100%;
+    max-width: none;
     transition: 1s;
     &:hover {
       background-color: $primary-color;

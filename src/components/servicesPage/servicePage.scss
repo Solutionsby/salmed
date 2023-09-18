@@ -2,7 +2,7 @@
 
 .service-page-wrapper {
   width: 100%;
-  margin-top: 15vh;
+  margin-top: $nav-height;
   .service-component {
     display: flex;
     flex-direction: column;
@@ -25,10 +25,10 @@
         background-color: #fff;
         .services-links {
           .service-icon {
-            color: black;
+            color: $primary-color;
           }
           .service-texts {
-            color: black;
+            color: $primary-color;
           }
         }
       }
@@ -52,8 +52,10 @@
           height: 50%;
           font-size: 18px;
           color: white;
+          font-family: $font;
           p {
-            font-size: 10px;
+            font-size: 12px;
+            font-family: $secendary-font;
           }
         }
       }

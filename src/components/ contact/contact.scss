@@ -1,3 +1,4 @@
+@import "../../assets/constant.scss";
 .contact-wrapper {
   display: flex;
   flex-direction: column;
@@ -20,11 +21,17 @@
     h1,
     h2 {
       text-align: left;
-      color: black;
+      color: $primary-color;
+      font-family: $font;
     }
     a {
       width: 90%;
+      font-size: 20px;
       text-align: left;
+      font-family: $secendary-font;
+      svg {
+        margin-right: 10px;
+      }
     }
   }
 }

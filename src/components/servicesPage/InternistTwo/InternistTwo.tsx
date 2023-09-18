@@ -35,13 +35,7 @@ export const InternistTwo = () => {
             <h3 className="price-cost">{internistTwo.internistTwoeWeek}</h3>
           </div>
         </div>
-        <Button
-          link={
-            "https://mydr.pl/patient/new-visit/evisit?kind=Prywatna&doctor={%22id%22:85348,%22name%22:%22Adam%20Salbert%22,%22search_id%22:%22b85d5e4cb74a98%22}&date=2023-09-14&search=true"
-          }
-        >
-          Zarezerwuj
-        </Button>
+        <Button classname={"services-button"}>Zarezerwuj</Button>
       </div>
     </div>
   );

@@ -8,14 +8,14 @@
     justify-content: end;
     width: 100%;
     height: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     transition: 1s;
     .slider-dots-wrapper {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 5vh;
+      margin-bottom: 2vh;
       .dot {
         margin-right: 10px;
         cursor: pointer;

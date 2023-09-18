@@ -3,7 +3,7 @@
 .menu-navigation {
   display: flex;
   position: fixed;
-  top: 14vh;
+  top: calc($nav-height - 1vh);
   bottom: 0;
   right: -1000px;
   width: 100%;
