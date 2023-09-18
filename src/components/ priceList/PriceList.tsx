@@ -1,13 +1,14 @@
 import "./priceList.scss";
 import { useTranslation } from "react-i18next";
 import { priceComponent } from "../db/price.json";
+import { Header } from "../header/Header";
 
 export const PriceList: React.FC = () => {
   const { t } = useTranslation("translation");
   return (
     <div>
       <div className="price-list-wrapper">
-        <div className="price-list-header"></div>
+        <Header image={"/img/slides/Slider2.jpg"} />
         <div className="price-list-pediatric-indection price-list">
           {priceComponent.map(
             ({
