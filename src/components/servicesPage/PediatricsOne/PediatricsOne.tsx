@@ -1,5 +1,5 @@
 import "../services.scss";
-import { pediatricOne } from "../../db/price.json";
+import { priceComponent } from "../../db/price.json";
 import { useTranslation } from "react-i18next";
 import { Button } from "../../button/Button";
 
@@ -25,14 +25,14 @@ export const PediatricsOne = () => {
               {t("servicesContent.visitPriceWeekend")}
             </h4>
             <div className="price-line"></div>
-            <h3 className="price-cost">{pediatricOne.pediatricOneWeekend}</h3>
+            <h3 className="price-cost">{priceComponent[0].priceWeekend}</h3>
           </div>
           <div className="price-week">
             <h4 className="price-description">
               {t("servicesContent.visitPriceWekk")}
             </h4>
             <div className="price-line"></div>
-            <h3 className="price-cost">{pediatricOne.pediatricOneWeek}</h3>
+            <h3 className="price-cost">{priceComponent[0].priceWeek}</h3>
           </div>
         </div>
         <Button
