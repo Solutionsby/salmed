@@ -9,11 +9,11 @@ export const MainPage: React.FC = () => {
       <div className="main-page-header">
         <Slider />
       </div>
-      <div className="aboutMe">
-        <AboutMe />
-      </div>
       <div className="main-page-service">
         <ServicePage />
+      </div>
+      <div className="aboutMe">
+        <AboutMe />
       </div>
     </div>
   );
