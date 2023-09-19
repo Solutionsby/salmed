@@ -14,7 +14,7 @@ export const MenuNavigation: React.FC<{
 
   return (
     <div className={isActive ? "menu-navigation open" : "menu-navigation"}>
-      <ul>
+      <ul className="menu-ul-wrapper-portrait">
         <li>
           <Link to="/#aboutMeSection" onClick={toggle}>
             {t("navigation.aboutMe")}

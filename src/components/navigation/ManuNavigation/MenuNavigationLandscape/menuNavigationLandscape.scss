@@ -1,0 +1,19 @@
+.menu-navigation-landscep-wrapper {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  margin-right: 3vw;
+  align-items: center;
+  .menu-ul-wrapper-landscape {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .menu-navigation-landscep-wrapper {
+    opacity: 0;
+    height: 0;
+  }
+}
