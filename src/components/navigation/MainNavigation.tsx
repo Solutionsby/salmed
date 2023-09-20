@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./mainNavigation.scss";
 import { useState } from "react";
 import { MenuNavigation } from "./ManuNavigation/MenuNavigation";
+import { MenuNavigationLandscape } from "./ManuNavigation/MenuNavigationLandscape/MenuNavigationLandscape";
 
 export const MainNavigation = () => {
   const [active, setActive] = useState(false);
@@ -24,6 +25,7 @@ export const MainNavigation = () => {
           <div className="navigation-logo"></div>
         </Link>
       </div>
+      <MenuNavigationLandscape />
       <div
         className={active ? "burger-menu-wrapper open" : "burger-menu-wrapper"}
         onClick={() => menuSwitch(setActive, active, false)}

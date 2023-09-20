@@ -16,3 +16,17 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .main-page-wrapper {
+    .main-page-header {
+      height: 90vh;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .main-page-wrapper {
+    .main-page-header {
+      height: 70vh;
+    }
+  }
+}

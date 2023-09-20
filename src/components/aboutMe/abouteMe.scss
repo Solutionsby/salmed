@@ -14,7 +14,6 @@
     background-image: url("/img/headers/Me/Salmed1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
   }
   .about-me-description {
     width: 80%;
@@ -22,5 +21,31 @@
     font-family: $secendary-font;
     color: black;
     text-align: left;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .about-me-wrapper {
+    flex-direction: row;
+    width: 95%;
+    margin-top: $nav-height-landscape;
+    .about-me-photo {
+      height: 80vh;
+      width: 30%;
+    }
+    .about-me-description {
+      width: 60%;
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .about-me-wrapper {
+    flex-direction: row;
+    .about-me-photo {
+      height: 60vh;
+    }
+    .about-me-description {
+      font-size: 24px;
+    }
   }
 }
