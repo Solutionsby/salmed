@@ -1,6 +1,7 @@
 @import "../../assets/constant.scss";
 .price-list-wrapper {
   display: flex;
+  margin-top: $nav-height;
   align-items: center;
   flex-direction: column;
   background-color: #fff;
@@ -38,6 +39,32 @@
           flex-grow: 8;
           background-color: $primary-color;
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .price-list-wrapper {
+    margin-top: $nav-height-landscape;
+    flex-direction: row;
+    justify-content: space-around;
+    .price-list {
+      width: 45%;
+      .price-component-wrapper {
+        margin: 2px 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .price-list-wrapper {
+    margin-top: $nav-height;
+    flex-direction: row;
+    justify-content: space-around;
+    .price-list {
+      width: 45%;
+      .price-component-wrapper {
+        margin: 2px 0;
       }
     }
   }
