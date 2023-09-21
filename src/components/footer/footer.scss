@@ -71,3 +71,23 @@
     }
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .footer-wrapper {
+    .footer-contact {
+      flex-direction: row;
+      justify-content: space-around;
+      .footer-contat-links {
+        flex-direction: row;
+        font-size: 12px;
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+    .footer-button {
+      order: 5;
+      width: 15%;
+      height: 10vh;
+    }
+  }
+}

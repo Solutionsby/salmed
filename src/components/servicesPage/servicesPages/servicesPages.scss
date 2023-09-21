@@ -72,10 +72,11 @@
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .services-pages-wrapper {
-    margin-top: $nav-height;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    height: 80vh;
+    margin-top: $nav-height;
     .services-pages-descripon-wrapper {
       width: 35%;
       gap: 10vh;

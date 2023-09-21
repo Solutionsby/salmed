@@ -49,3 +49,14 @@
     }
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .about-me-wrapper {
+    flex-direction: row;
+    .about-me-photo {
+      height: 60vh;
+    }
+    .about-me-description {
+      font-size: 24px;
+    }
+  }
+}

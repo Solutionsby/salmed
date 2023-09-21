@@ -97,3 +97,15 @@
     }
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .navigation-wrapper {
+    .navigation-logo-wrapper {
+      width: 15%;
+      height: 30%;
+    }
+    .burger-menu-wrapper {
+      opacity: 0;
+      display: none;
+    }
+  }
+}

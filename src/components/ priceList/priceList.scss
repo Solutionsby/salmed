@@ -69,3 +69,17 @@
     }
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .price-list-wrapper {
+    margin-top: $nav-height;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80vh;
+    .price-list {
+      width: 45%;
+      .price-component-wrapper {
+        margin: 2px 0;
+      }
+    }
+  }
+}

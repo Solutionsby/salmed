@@ -30,3 +30,10 @@
     }
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .main-page-wrapper {
+    .main-page-header {
+      height: 70vh;
+    }
+  }
+}

@@ -105,3 +105,23 @@
     }
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .service-page-wrapper {
+    margin-top: $nav-height;
+    .service-component {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .services-component-wrapper {
+        width: 45%;
+        .services-links {
+          .service-texts {
+            p {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
