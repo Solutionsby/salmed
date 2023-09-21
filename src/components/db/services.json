@@ -28,5 +28,31 @@
       "descriptionKey": "services.descryption.three",
       "linkPath": "internist-healthy"
     }
+  ],
+  "serviceContent": [
+    {
+      "id": 0,
+      "visitHeader": "servicesContent.visitOneHeader",
+      "headerImg": "/img/headers/Headers3.jpg",
+      "visitDescripton": "servicesContent.visitOne"
+    },
+    {
+      "id": 1,
+      "visitHeader": "servicesContent.visitTwoHeader",
+      "headerImg": "/img/headers/Headers1.jpg",
+      "visitDescripton": "servicesContent.visitTwo"
+    },
+    {
+      "id": 2,
+      "visitHeader": "servicesContent.visitOneHeader",
+      "headerImg": "/img/headers/Headers4.jpg",
+      "visitDescripton": "servicesContent.visitThree"
+    },
+    {
+      "id": 3,
+      "visitHeader": "servicesContent.vistiThreeHeader",
+      "headerImg": "/img/headers/Headers2.jpg",
+      "visitDescripton": "servicesContent.visitFour"
+    }
   ]
 }

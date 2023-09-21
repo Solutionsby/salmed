@@ -7,10 +7,8 @@ import { Footer } from "./components/footer/Footer";
 import { AboutMe } from "./components/aboutMe/AbouteMe";
 import { PriceList } from "./components/ priceList/PriceList";
 import { Contact } from "./components/ contact/Contact";
-import { PediatricsOne } from "./components/servicesPage/PediatricsOne/PediatricsOne";
-import { PediatricsTwo } from "./components/servicesPage/PediatricsTwo/PediatricsTwo";
-import { InternistOne } from "./components/servicesPage/InternistOne/InternistOne";
-import { InternistTwo } from "./components/servicesPage/InternistTwo/InternistTwo";
+import { priceComponent } from "./components/db/price.json";
+import { serviceContent } from "./components/db/services.json";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faUserMd,
@@ -27,6 +25,7 @@ import "./App.css";
 // import translationEN from "./locales/en/translation.json";
 import translationPL from "./locales/pl/translation.json";
 import ScrollToTopEffect from "./assets/ScrollToTop";
+import { ServicesPages } from "./components/servicesPage/servicesPages/ServicesPages";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -60,10 +59,42 @@ function App() {
           <Route path="about" element={<AboutMe />} />
           <Route path="priceList" element={<PriceList />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="pedriatic-indection" element={<PediatricsOne />} />
-          <Route path="pedriatic-healthy" element={<PediatricsTwo />} />
-          <Route path="internist-indection" element={<InternistOne />} />
-          <Route path="internist-healthy" element={<InternistTwo />} />
+          <Route
+            path="pedriatic-indection"
+            element={
+              <ServicesPages
+                price={priceComponent[0]}
+                content={serviceContent[0]}
+              />
+            }
+          />
+          <Route
+            path="pedriatic-healthy"
+            element={
+              <ServicesPages
+                price={priceComponent[1]}
+                content={serviceContent[1]}
+              />
+            }
+          />
+          <Route
+            path="internist-indection"
+            element={
+              <ServicesPages
+                price={priceComponent[2]}
+                content={serviceContent[2]}
+              />
+            }
+          />
+          <Route
+            path="internist-healthy"
+            element={
+              <ServicesPages
+                price={priceComponent[3]}
+                content={serviceContent[3]}
+              />
+            }
+          />
         </Routes>
         <Footer />
       </div>
