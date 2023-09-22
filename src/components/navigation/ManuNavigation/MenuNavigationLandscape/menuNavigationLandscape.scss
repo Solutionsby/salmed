@@ -1,3 +1,4 @@
+@import "../../../../assets/constant.scss";
 .menu-navigation-landscep-wrapper {
   display: flex;
   width: 60%;
@@ -8,6 +9,31 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    a {
+      font-family: $font;
+      color: $primary-color;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .menu-navigation-landscep-wrapper {
+    .menu-ul-wrapper-landscape {
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .menu-navigation-landscep-wrapper {
+    .menu-ul-wrapper-landscape {
+      a {
+        font-size: 1.8rem;
+      }
+    }
   }
 }
 
