@@ -1,0 +1,12 @@
+@import "../../assets/constant.scss";
+.language-selector-wrapper {
+  display: flex;
+  height: 100%;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  .language {
+    cursor: pointer;
+  }
+}
