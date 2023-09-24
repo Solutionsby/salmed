@@ -1,21 +1,23 @@
 import "./languageSelector.scss";
-import i18n, { changeLanguage } from "i18next";
+import { useState } from "react";
 
 interface LanguageSelectorProps {
   changeLanguage: (language: string) => void;
 }
 
-export const LanguageSelector: React.FC<LanguageSelectorProps> = () => {
-  console.log(i18n.language);
-
+export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
+  changeLanguage,
+}) => {
+  const [activeLenguage, setActiveLenguage] = useState<string>("pl");
   const handleLanguageChange = (language: string) => {
     changeLanguage(language);
+    setActiveLenguage(language);
   };
   return (
     <div className="language-selector-wrapper">
       <div
         className="language-pl language"
-        style={{ color: i18n.language === "pl" ? "black" : "gray" }}
+        style={{ color: activeLenguage === "pl" ? "black" : "gray" }}
         onClick={() => handleLanguageChange("pl")}
       >
         PL
@@ -24,7 +26,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = () => {
       <div
         className="language-en language"
         onClick={() => handleLanguageChange("en")}
-        style={{ color: i18n.language === "en" ? "black" : "gray" }}
+        style={{ color: activeLenguage === "en" ? "black" : "gray" }}
       >
         EN
       </div>

@@ -30,7 +30,9 @@ export const Footer = () => {
           </div>
         </a>
       </div>
-      <Link to="privacy-policy">Polityka prywatności</Link>
+      <Link className="privacy-policy" to="privacy-policy">
+        Polityka prywatności
+      </Link>
       <div className="solutionsby"></div>
     </div>
   );

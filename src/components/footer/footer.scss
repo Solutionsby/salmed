@@ -5,8 +5,8 @@
   align-items: center;
   flex-direction: column;
   background-color: $primary-color;
-  a {
-    align-self: start;
+  .privacy-policy {
+    align-self: flex-start;
     color: white;
     font-size: 3vh;
   }
