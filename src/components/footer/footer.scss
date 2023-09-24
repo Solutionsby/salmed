@@ -5,6 +5,11 @@
   align-items: center;
   flex-direction: column;
   background-color: $primary-color;
+  a {
+    align-self: start;
+    color: white;
+    font-size: 3vh;
+  }
   .footer-contact {
     display: flex;
     flex-direction: column;
