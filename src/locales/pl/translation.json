@@ -27,5 +27,54 @@
     "services": "Usługi",
     "priceList": "Cennik",
     "contact": "Kontakt"
+  },
+  "privatyPolicy": {
+    "popUpText": "Witaj na stronie salmed dbamy o Twoją prywatność. Korzystamy z narzędzi analitycznych, takich jak Google Analytics i HotJar, aby doskonalić naszą stronę. Klikając 'Akceptuj'zgadzasz się na zbieranie danych w celach analitycznych",
+    "accept": "Akceptuj",
+    "denial": "Odmów",
+    "more": "Więcej..."
+  },
+  "privacyPolicyText": {
+    "entry": "INDYWIDUALNA PRAKTYKA LEKARSKA ADAM SALBERT (dalej zwany Salmed) szanuje Twoją prywatność i dba o ochronę Twoich danych osobowych. Niniejsza polityka prywatności ma na celu wyjaśnienie, jakie dane osobowe zbieramy oraz w jaki sposób je przetwarzamy. Prosimy o dokładne zapoznanie się treścią niniejszego dokumentu.",
+    "dataController": "Administratorem Twoich danych osobowych jest Salmed, z siedzibą pod adresem Szczecińska 23/11, 80-392 Gdańsk , NIP 5842788735, REGON 384819410",
+    "paragrafOne": {
+      "heading": "Rodzaje danych osobowych zbieranych przez Salmed",
+      "text": "Salmed zbiera tylko te dane osobowe, które są niezbędne do zapewnienia odpowiedniej obsługi pacjentów oraz prowadzenia analizy strony internetowej Salmed. Oto rodzaje danych, które możemy zbierać:",
+      "textAHeading": "a) Dane osobowe pacjentów:",
+      "textAOne": "- Imię i nazwisko,",
+      "textATwo": "- Numer telefonu,",
+      "textAThree": "- Adres e-mail,",
+      "textAFour": "- Inne dane medyczne niezbędne do udzielenia pomocy medycznej.",
+      "textBHeading": "b) Dane zbierane za pomocą narzędzi analitycznych:",
+      "textBOne": "- Informacje zbierane przez Google Analytics,",
+      "textBTwo": "- Informacje zbierane przez HotJar (np. ruch na stronie internetowej, zachowanie użytkowników)."
+    },
+    "paragrafTwo": {
+      "heading": "Salmed zbiera dane osobowe w celu:",
+      "textA": "a) Zapewnienia odpowiedniej opieki medycznej pacjentom,",
+      "textB": "b) Analizy ruchu na stronie internetowej w celu poprawy jej funkcjonalności i dostosowania treści do potrzeb użytkowników,",
+      "textC": "c) Prowadzenia analizy statystycznej w celu doskonalenia naszych usług."
+    },
+    "paragrafThree": {
+      "heading": "Przetwarzanie danych osobowych",
+      "text": "Twoje dane osobowe są przetwarzane zgodnie z obowiązującymi przepisami prawa oraz zabezpieczane przed nieuprawnionym dostępem. Salmed przestrzega zasad poufności i nie udostępnia Twoich danych osobowych osobom trzecim bez Twojej wyraźnej zgody."
+    },
+    "paragrafFour": {
+      "heading": "Narzędzia analityczne",
+      "text": "Salmed korzysta z narzędzi analitycznych, takich jak Google Analytics i HotJar, w celu zbierania informacji na temat korzystania z naszej strony internetowej. Te narzędzia mogą gromadzić dane, takie jak adres IP, przeglądarka internetowa, system operacyjny oraz zachowanie użytkowników na stronie. Dane te są wykorzystywane wyłącznie do celów analizy statystycznej i doskonalenia naszej strony internetowej."
+    },
+    "paragrafFive": {
+      "heading": "Prawa użytkowników",
+      "text": "Masz prawo do dostępu do swoich danych osobowych, ich poprawiania, usunięcia lub ograniczenia przetwarzania. Możesz również wycofać swoją zgodę na przetwarzanie danych w dowolnym momencie. Aby skorzystać z tych praw, prosimy o kontakt z nami pod adresem salbert@sal-med.pl lub telefonicznie pod numerem 785 427 424"
+    },
+    "paragrafSix": {
+      "heading": "Bezpieczeństwo danych",
+      "text": "Salmed podejmuje wszelkie niezbędne środki w celu zabezpieczenia Twoich danych osobowych przed nieuprawnionym dostępem, utratą lub nieuprawnionym ujawnieniem."
+    },
+    "paragrafSeven": {
+      "heading": "Zmiany w polityce prywatności",
+      "text": "Salmed zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. Wszelkie zmiany zostaną opublikowane na naszej stronie internetowej."
+    },
+    "ending": "Niniejsza polityka prywatności została ostatnio zaktualizowana dnia 24.09.2023. Jeśli masz pytania lub wątpliwości dotyczące naszej polityki prywatności, prosimy o kontakt pod adresem salbert@sal-med.pl.Dziękujemy za zaufanie i korzystanie z usług Salmed."
   }
 }

@@ -1,0 +1,137 @@
+@import "../../assets/constant.scss";
+.privacy-policy-wrapper {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  &.active {
+    animation: close 5s ease forwards;
+  }
+  &.close {
+    display: none;
+  }
+  .privacy-policy-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 80%;
+    height: 80%;
+    color: white;
+    .privacy-policy-button {
+      display: flex;
+      width: 80%;
+      justify-content: space-around;
+      span {
+        cursor: pointer;
+        transition: 0.2s;
+        font-size: 2.8vh;
+        &:nth-of-type(1):hover {
+          color: green;
+        }
+        &:nth-of-type(2):hover {
+          color: red;
+        }
+      }
+    }
+    .privaty-policy-link {
+      color: white;
+      font-size: 2.5vh;
+    }
+  }
+}
+
+@keyframes close {
+  0% {
+    height: 50vh;
+    left: 0vw;
+    right: 0vw;
+  }
+  100% {
+    left: 50vw;
+    right: 50vw;
+    height: 0;
+    opacity: 0;
+    display: none;
+  }
+}
+@media screen and (min-height: 600px) {
+  .privacy-policy-wrapper {
+    height: 40vh;
+  }
+}
+@media screen and (min-height: 700px) {
+  .privacy-policy-wrapper {
+    height: 32vh;
+  }
+}
+@media screen and (min-height: 900px) {
+  .privacy-policy-wrapper {
+    height: 18vh;
+    .privacy-policy-content {
+      .privacy-policy-button {
+        span {
+          font-size: 2vh;
+        }
+      }
+      .privaty-policy-link {
+        font-size: 2vh;
+      }
+    }
+  }
+}
+@media screen and (min-height: 1200px) {
+  .privacy-policy-wrapper {
+    height: 14vh;
+    .privacy-policy-content {
+      .privaty-policy-link {
+        font-size: 1.6vh;
+      }
+      .privacy-policy-button {
+        span {
+          font-size: 1.8vh;
+        }
+      }
+    }
+  }
+}
+@media screen and (orientation: landscape) {
+  .privacy-policy-wrapper {
+    height: 25vh;
+    .privacy-policy-content {
+      width: 98%;
+      font-size: 2.5vh;
+      .privacy-policy-button {
+        span {
+          font-size: 3.5vh;
+        }
+      }
+      .privaty-policy-link {
+        font-size: 3.5vh;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .privacy-policy-wrapper {
+    height: 20vh;
+    .privacy-policy-content {
+      width: 98%;
+      font-size: 2.5vh;
+      .privacy-policy-button {
+        span {
+          font-size: 3.5vh;
+        }
+      }
+      .privaty-policy-link {
+        font-size: 3.5vh;
+      }
+    }
+  }
+}

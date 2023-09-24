@@ -1,0 +1,127 @@
+@import "../../../assets/constant.scss";
+
+.privacy-policy-text-wrapper {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  color: black;
+  font-family: $secendary-font;
+  margin-top: calc($nav-height + 2vh);
+  margin-bottom: 20px;
+  .privacy-policy-text-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    width: 90%;
+    font-size: 13px;
+  }
+  .privacy-policy-text-paragrafs {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    row-gap: 5px;
+    text-align: left;
+    .privacy-policy-text-paragraf {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2px;
+      align-items: center;
+      h4 {
+        width: 100%;
+        text-transform: uppercase;
+        font-family: $font;
+      }
+      p {
+        width: 95%;
+        font-size: 13px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        row-gap: 5px;
+        width: 95%;
+      }
+      li {
+        width: 90%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .privacy-policy-text-wrapper {
+    .privacy-policy-text-entry {
+      width: 95%;
+    }
+    .privacy-policy-text-paragrafs {
+      width: 95%;
+      .privacy-policy-text-paragraf {
+        p {
+          width: 98%;
+        }
+        ul {
+          width: 100%;
+        }
+        li {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .privacy-policy-text-wrapper {
+    .privacy-policy-text-entry {
+      width: 95%;
+    }
+    .privacy-policy-text-paragrafs {
+      width: 95%;
+      .privacy-policy-text-paragraf {
+        p {
+          width: 98%;
+        }
+        ul {
+          width: 100%;
+        }
+        li {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .privacy-policy-text-wrapper {
+    .privacy-policy-text-entry {
+      width: 95%;
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .privacy-policy-text-paragrafs {
+      width: 95%;
+      .privacy-policy-text-paragraf {
+        h4 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 20px;
+          width: 98%;
+        }
+        ul {
+          width: 100%;
+        }
+        li {
+          width: 95%;
+        }
+      }
+    }
+  }
+}

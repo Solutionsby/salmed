@@ -3,10 +3,12 @@ import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import { MainPage } from "./components/mainPage/MainPage";
 import { MainNavigation } from "./components/navigation/MainNavigation";
+import { PrivacyPolicy } from "./components/policy/PrivacyPolicy";
 import { Footer } from "./components/footer/Footer";
 import { AboutMe } from "./components/aboutMe/AbouteMe";
 import { PriceList } from "./components/ priceList/PriceList";
 import { Contact } from "./components/ contact/Contact";
+import { PrivacyPolicyText } from "./components/policy/privacy-policy-text/PrivacyPolicyText";
 import { priceComponent } from "./components/db/price.json";
 import { serviceContent } from "./components/db/services.json";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -59,6 +61,7 @@ function App() {
           <Route path="about" element={<AboutMe />} />
           <Route path="priceList" element={<PriceList />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy-policy" element={<PrivacyPolicyText />} />
           <Route
             path="pedriatic-indection"
             element={
@@ -96,6 +99,7 @@ function App() {
             }
           />
         </Routes>
+        <PrivacyPolicy />
         <Footer />
       </div>
     </Router>

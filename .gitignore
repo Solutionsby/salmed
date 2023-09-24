@@ -19,6 +19,7 @@ dist-ssr
 .DS_Store
 public/*
 src/db/*
+src/locales/*
 *.suo
 *.ntvs*
 *.njsproj
