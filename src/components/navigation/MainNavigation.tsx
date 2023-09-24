@@ -3,8 +3,15 @@ import "./mainNavigation.scss";
 import { useState } from "react";
 import { MenuNavigation } from "./ManuNavigation/MenuNavigation";
 import { MenuNavigationLandscape } from "./ManuNavigation/MenuNavigationLandscape/MenuNavigationLandscape";
+import { LanguageSelector } from "../LanguageSelector/LanguageSelector";
 
-export const MainNavigation = () => {
+interface NavigationProps {
+  changeLanguage: (language: string) => void;
+}
+
+export const MainNavigation: React.FC<NavigationProps> = ({
+  changeLanguage,
+}) => {
   const [active, setActive] = useState(false);
   const menuSwitch = (
     setter: React.Dispatch<React.SetStateAction<boolean>>,
@@ -26,6 +33,7 @@ export const MainNavigation = () => {
         </Link>
       </div>
       <MenuNavigationLandscape />
+      <LanguageSelector changeLanguage={changeLanguage} />
       <div
         className={active ? "burger-menu-wrapper open" : "burger-menu-wrapper"}
         onClick={() => menuSwitch(setActive, active, false)}
@@ -34,6 +42,7 @@ export const MainNavigation = () => {
         <div className={active ? "bars open" : "bars"}></div>
         <div className={active ? "bars open" : "bars"}></div>
       </div>
+
       <MenuNavigation
         isActive={active}
         toggle={() => menuSwitch(setActive, active, false)}

@@ -24,14 +24,14 @@ import {
 import "./App.css";
 
 // Importuje tłumaczenia
-// import translationEN from "./locales/en/translation.json";
+import translationEN from "./locales/en/translation.json";
 import translationPL from "./locales/pl/translation.json";
 import ScrollToTopEffect from "./assets/ScrollToTop";
 import { ServicesPages } from "./components/servicesPage/servicesPages/ServicesPages";
 
 i18n.use(initReactI18next).init({
   resources: {
-    // en: { translation: translationEN },
+    en: { translation: translationEN },
     pl: { translation: translationPL },
   },
   lng: "pl",
@@ -54,7 +54,7 @@ function App() {
   return (
     <Router>
       <div className="app-wrapper">
-        <MainNavigation />
+        <MainNavigation changeLanguage={i18n.changeLanguage} />
         <ScrollToTopEffect />
         <Routes>
           <Route path="/" element={<MainPage />} />
