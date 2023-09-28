@@ -20,61 +20,61 @@
   },
   "aboutMeSection": {
     "name": "Adam Salbert",
-    "aboutMeDescription": "Jestem absolwentem Uniwersytetu Medycznego w Gdańsku. Szkolenie specjalizacyjne kończę w zakresie Medycyny Rodzinnej. Doświadczenie zawodowe zdobywam podczas codziennej pracy w centrum opieki zdrowotnej,  w ramach prywatnej praktyki lekarskiej w Polsce oraz w Skandynawii. Przyjmuje wszystkich pacjentów z podejściem holistycznym z myślą o poprawie ogólnego stanu zdrowia. Umówienie wizyty jest możliwe w języku polskim, angielskim, szwedzkim, oraz norweskim."
+    "aboutMeDescription": "My name is Adam Salbert and I am a medical doctor graduate from Gdańsk Medical University.At the moment I am finishing my specialist training as a general practitioner  (GP). I acquire my experience from my daily work at the healthcare office where I treat both children and adults.Furthermore since 2010 I regularly work in Scandinavia which has helped me expand a more global approach towards my patients.On a regular basis I attend lectures and conferences in order to be able to provide the highest standards of treatment concurrent with EBM (evidence based medicine). By employing a holistic approach, in my clinic I try to provide a professional and individual approach to each medical case aiming for the best therapeutic effect.My knowledge in the English, Norwegian, Swedish, and Polish languages is fluent, guranteening that the communication with You as a foreign patient is not lost. "
   },
   "navigation": {
-    "aboutMe": "Test",
-    "services": "Test2",
-    "priceList": "TEst3",
-    "contact": "test4"
+    "aboutMe": "About me",
+    "services": "Services",
+    "priceList": "Tariff",
+    "contact": "Contact"
   },
   "privatyPolicy": {
-    "popUpText": "Witaj na stronie salmed dbamy o Twoją prywatność. Korzystamy z narzędzi analitycznych, takich jak Google Analytics i HotJar, aby doskonalić naszą stronę. Klikając 'Akceptuj'zgadzasz się na zbieranie danych w celach analitycznych",
-    "accept": "Akceptuj",
-    "denial": "Odmów",
-    "more": "Więcej..."
+    "popUpText": "Welcome to the Salmed website. We care about your privacy. We use analytical tools such as Google Analytics and HotJar to improve our site. By clicking 'Accept,' you consent to data collection for analytical purposes.",
+    "accept": "Accept",
+    "denial": "Deny",
+    "more": "Lern More..."
   },
   "privacyPolicyText": {
-    "entry": "INDYWIDUALNA PRAKTYKA LEKARSKA ADAM SALBERT (dalej zwany Salmed) szanuje Twoją prywatność i dba o ochronę Twoich danych osobowych. Niniejsza polityka prywatności ma na celu wyjaśnienie, jakie dane osobowe zbieramy oraz w jaki sposób je przetwarzamy. Prosimy o dokładne zapoznanie się treścią niniejszego dokumentu.",
-    "dataController": "Administratorem Twoich danych osobowych jest Salmed, z siedzibą pod adresem Szczecińska 23/11, 80-392 Gdańsk , NIP 5842788735, REGON 384819410",
+    "entry": "INDIVIDUAL MEDICAL PRACTICE ADAM SALBERT (hereinafter referred to as Salmed) respects your privacy and cares about the protection of your personal data. This privacy policy aims to explain what personal data we collect and how we process it. Please carefully read the content of this document.",
+    "dataController": "Salmed is the data controller for your personal data, with its registered office at Szczecińska 23/11, 80-392 Gdańsk, Tax Identification Number (NIP) 5842788735, National Business Registry Number (REGON) 384819410.",
     "paragrafOne": {
-      "heading": "Rodzaje danych osobowych zbieranych przez Salmed",
-      "text": "Salmed zbiera tylko te dane osobowe, które są niezbędne do zapewnienia odpowiedniej obsługi pacjentów oraz prowadzenia analizy strony internetowej Salmed. Oto rodzaje danych, które możemy zbierać:",
-      "textAHeading": "a) Dane osobowe pacjentów:",
-      "textAOne": "- Imię i nazwisko,",
-      "textATwo": "- Numer telefonu,",
-      "textAThree": "- Adres e-mail,",
-      "textAFour": "- Inne dane medyczne niezbędne do udzielenia pomocy medycznej.",
-      "textBHeading": "b) Dane zbierane za pomocą narzędzi analitycznych:",
-      "textBOne": "- Informacje zbierane przez Google Analytics,",
-      "textBTwo": "- Informacje zbierane przez HotJar (np. ruch na stronie internetowej, zachowanie użytkowników)."
+      "heading": "Types of Personal Data Collected by Salmed",
+      "text": "Salmed only collects personal data that is necessary to provide proper patient care and analyze the Salmed website. Here are the types of data we may collect:",
+      "textAHeading": "a) Patient's Personal Data:",
+      "textAOne": "- First and last name,",
+      "textATwo": "- Phone number,",
+      "textAThree": "- Email address,",
+      "textAFour": "- Other medical data necessary for medical assistance.",
+      "textBHeading": "b) Data Collected Using Analytical Tools:",
+      "textBOne": "- Information collected by Google Analytics,",
+      "textBTwo": "- Information collected by HotJar (e.g., website traffic, user behavior)."
     },
     "paragrafTwo": {
-      "heading": "Salmed zbiera dane osobowe w celu:",
-      "textA": "a) Zapewnienia odpowiedniej opieki medycznej pacjentom,",
-      "textB": "b) Analizy ruchu na stronie internetowej w celu poprawy jej funkcjonalności i dostosowania treści do potrzeb użytkowników,",
-      "textC": "c) Prowadzenia analizy statystycznej w celu doskonalenia naszych usług."
+      "heading": "Salmed Collects Personal Data for the Following Purposes:",
+      "textA": "a) Providing proper medical care to patients,",
+      "textB": "b) Analyzing website traffic to improve its functionality and tailor content to user needs,",
+      "textC": "c) Conducting statistical analysis to enhance our services."
     },
     "paragrafThree": {
-      "heading": "Przetwarzanie danych osobowych",
-      "text": "Twoje dane osobowe są przetwarzane zgodnie z obowiązującymi przepisami prawa oraz zabezpieczane przed nieuprawnionym dostępem. Salmed przestrzega zasad poufności i nie udostępnia Twoich danych osobowych osobom trzecim bez Twojej wyraźnej zgody."
+      "heading": "Processing of Personal Data",
+      "text": "Your personal data is processed in accordance with applicable legal regulations and protected against unauthorized access. Salmed adheres to confidentiality principles and does not disclose your personal data to third parties without your explicit consent."
     },
     "paragrafFour": {
-      "heading": "Narzędzia analityczne",
-      "text": "Salmed korzysta z narzędzi analitycznych, takich jak Google Analytics i HotJar, w celu zbierania informacji na temat korzystania z naszej strony internetowej. Te narzędzia mogą gromadzić dane, takie jak adres IP, przeglądarka internetowa, system operacyjny oraz zachowanie użytkowników na stronie. Dane te są wykorzystywane wyłącznie do celów analizy statystycznej i doskonalenia naszej strony internetowej."
+      "heading": "Analytical Tools",
+      "text": "Salmed uses analytical tools such as Google Analytics and HotJar to gather information about the use of our website. These tools may collect data such as IP address, web browser, operating system, and user behavior on the site. This data is solely used for statistical analysis and improving our website."
     },
     "paragrafFive": {
-      "heading": "Prawa użytkowników",
-      "text": "Masz prawo do dostępu do swoich danych osobowych, ich poprawiania, usunięcia lub ograniczenia przetwarzania. Możesz również wycofać swoją zgodę na przetwarzanie danych w dowolnym momencie. Aby skorzystać z tych praw, prosimy o kontakt z nami pod adresem salbert@sal-med.pl lub telefonicznie pod numerem 785 427 424"
+      "heading": "User Rights",
+      "text": "You have the right to access your personal data, rectify, delete, or restrict its processing. You can also withdraw your consent to data processing at any time. To exercise these rights, please contact us at salbert@sal-med.pl or call us at +48 785 427 424."
     },
     "paragrafSix": {
-      "heading": "Bezpieczeństwo danych",
-      "text": "Salmed podejmuje wszelkie niezbędne środki w celu zabezpieczenia Twoich danych osobowych przed nieuprawnionym dostępem, utratą lub nieuprawnionym ujawnieniem."
+      "heading": "Data Security",
+      "text": "Salmed takes all necessary measures to secure your personal data against unauthorized access, loss, or unauthorized disclosure."
     },
     "paragrafSeven": {
-      "heading": "Zmiany w polityce prywatności",
-      "text": "Salmed zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. Wszelkie zmiany zostaną opublikowane na naszej stronie internetowej."
+      "heading": "Changes to Privacy Policy",
+      "text": "Salmed reserves the right to make changes to this privacy policy. Any changes will be published on our website."
     },
-    "ending": "Niniejsza polityka prywatności została ostatnio zaktualizowana dnia 24.09.2023. Jeśli masz pytania lub wątpliwości dotyczące naszej polityki prywatności, prosimy o kontakt pod adresem salbert@sal-med.pl.Dziękujemy za zaufanie i korzystanie z usług Salmed."
+    "ending": "This privacy policy was last updated on September 24, 2023. If you have any questions or concerns about our privacy policy, please contact us at salbert@sal-med.pl. Thank you for your trust and for using Salmed's services."
   }
 }

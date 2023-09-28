@@ -13,9 +13,9 @@
     "visitPriceWekk": "Wizyta w tygodniu",
     "visitPriceWeekend": "Wizyta w Weekend",
     "visitTwoHeader": "Wizyty dzieci zdrowych",
-    "visitTwo": "preferowana wizyta stacjonarna ale możliwość przeprowadzenia wizytę w trybie e-wizyty (teleporady lub online)",
+    "visitTwo": "Preferowana wizyta stacjonarna ale możliwość przeprowadzenia wizytę w trybie e-wizyty (teleporady lub online).Wizyta przeznaczona dla wszystkich dzieci z chorobami wieku dziecięcego: Bilansy,Konsultacja patronazowa noworodka,profilaktyka, Zaswiadczenia na podstawie bilansow",
     "vistiThreeHeader": "Wizyty internistyczne bez objawów infekcji.",
-    "visitThree": "Wizyta Internistyczna dla osób powyżej 18 roku życia. Wizyta dla osób z objawami infekcji",
+    "visitThree": "Wizyta Internistyczna dla osób powyżej 18 roku życia. Wizyta dla osób z objawami infekcji.Pacjent proszony jest o zakrywaniu ust ORAZ nosa maską ochronną.Wizyta jednie możliwa w trybie stacjonarnym",
     "visitFour": "Wizyta Internistyczna dla osób powyżej 18 roku życia. Wizyta bez objawów infekcji "
   },
   "aboutMeSection": {
@@ -76,5 +76,9 @@
       "text": "Salmed zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. Wszelkie zmiany zostaną opublikowane na naszej stronie internetowej."
     },
     "ending": "Niniejsza polityka prywatności została ostatnio zaktualizowana dnia 24.09.2023. Jeśli masz pytania lub wątpliwości dotyczące naszej polityki prywatności, prosimy o kontakt pod adresem salbert@sal-med.pl.Dziękujemy za zaufanie i korzystanie z usług Salmed."
+  },
+  "welcomeScreen": {
+    "center": "Centrum Leczenia Marihuaną Leczniczą",
+    "clinic": "Gabinet Lekarski Internistyczno Pediatryczny"
   }
 }
