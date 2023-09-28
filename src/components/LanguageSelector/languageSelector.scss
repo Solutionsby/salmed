@@ -2,11 +2,28 @@
 .language-selector-wrapper {
   display: flex;
   height: 100%;
+  margin-right: 10px;
   width: 20%;
   justify-content: space-between;
   align-items: center;
   color: black;
   .language {
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .language-selector-wrapper {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .language-selector-wrapper {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .language-selector-wrapper {
+    width: 5%;
+    margin-right: 30px;
   }
 }
