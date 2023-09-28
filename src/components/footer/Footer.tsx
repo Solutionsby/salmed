@@ -4,9 +4,14 @@ import { Button } from "../button/Button";
 import "./footer.scss";
 import icons from "../db/icons.json";
 import contact from "../db/contact.json";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const Footer = () => {
+  const location = useLocation();
+  const isWelcomeScreen = location.pathname === "/";
+  if (isWelcomeScreen) {
+    return null;
+  }
   return (
     <div className="footer-wrapper">
       <div className="footer-contact">

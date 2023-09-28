@@ -28,6 +28,7 @@ import translationEN from "./locales/en/translation.json";
 import translationPL from "./locales/pl/translation.json";
 import ScrollToTopEffect from "./assets/ScrollToTop";
 import { ServicesPages } from "./components/servicesPage/servicesPages/ServicesPages";
+import { WelcomScreen } from "./components/welcomScreen/WelcomeScreen";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -57,7 +58,8 @@ function App() {
         <MainNavigation changeLanguage={i18n.changeLanguage} />
         <ScrollToTopEffect />
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/" element={<WelcomScreen />} />
+          <Route path="mainPage" element={<MainPage />} />
           <Route path="about" element={<AboutMe />} />
           <Route path="priceList" element={<PriceList />} />
           <Route path="contact" element={<Contact />} />

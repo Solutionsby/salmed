@@ -16,12 +16,12 @@ export const MenuNavigation: React.FC<{
     <div className={isActive ? "menu-navigation open" : "menu-navigation"}>
       <ul className="menu-ul-wrapper-portrait">
         <li>
-          <Link to="/#aboutMeSection" onClick={toggle}>
+          <Link to="mainPage#aboutMeSection" onClick={toggle}>
             {t("navigation.aboutMe")}
           </Link>
         </li>
         <li>
-          <Link to="/#serviceSection" onClick={toggle}>
+          <Link to="mainPage#serviceSection" onClick={toggle}>
             {t("navigation.services")}
           </Link>
         </li>
