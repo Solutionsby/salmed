@@ -21,7 +21,6 @@ interface priceObject {
 
 export const ServicesPages: React.FC<priceObject> = ({ price, content }) => {
   const { t } = useTranslation("translation");
-  console.log(price.priceWeek);
 
   return (
     <div className="services-pages-wrapper">

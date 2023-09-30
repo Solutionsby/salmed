@@ -57,6 +57,13 @@
     }
   }
 }
+.navigation-wrapper-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+}
 @media screen and (max-width: 768px) and (orientation: landscape) {
   .navigation-wrapper {
     height: $nav-height-landscape;
