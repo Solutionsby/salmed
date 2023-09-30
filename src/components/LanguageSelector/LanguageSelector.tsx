@@ -15,20 +15,26 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   };
   return (
     <div className="language-selector-wrapper">
-      <div
-        className="language-pl language"
-        style={{ color: activeLenguage === "pl" ? "black" : "gray" }}
-        onClick={() => handleLanguageChange("pl")}
-      >
-        PL
+      <div className="language-pl language">
+        <div
+          className="language-selector-cover"
+          onClick={() => handleLanguageChange("pl")}
+          style={{
+            backgroundColor:
+              activeLenguage === "pl" ? "transparent" : "rgba(0,0,0,0.7)",
+          }}
+        ></div>
       </div>
-      <div>|</div>
-      <div
-        className="language-en language"
-        onClick={() => handleLanguageChange("en")}
-        style={{ color: activeLenguage === "en" ? "black" : "gray" }}
-      >
-        EN
+      <div className="language-selector-linie"></div>
+      <div className="language-en language">
+        <div
+          className="language-selector-cover"
+          onClick={() => handleLanguageChange("en")}
+          style={{
+            backgroundColor:
+              activeLenguage === "en" ? "transparent" : "rgba(0,0,0,0.7)",
+          }}
+        ></div>
       </div>
     </div>
   );

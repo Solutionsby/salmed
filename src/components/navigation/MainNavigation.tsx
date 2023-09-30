@@ -28,7 +28,11 @@ export const MainNavigation: React.FC<NavigationProps> = ({
     }
   };
   if (isWelcomeScreen) {
-    return null;
+    return (
+      <div className="navigation-wrapper-welcome">
+        <LanguageSelector changeLanguage={changeLanguage} />
+      </div>
+    );
   }
   return (
     <div className="navigation-wrapper">
