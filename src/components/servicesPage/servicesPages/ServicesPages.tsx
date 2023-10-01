@@ -43,7 +43,9 @@ export const ServicesPages: React.FC<priceObject> = ({ price, content }) => {
             <h3>{price.priceWeekend}</h3>
           </div>
         </div>
-        <Button classname={"services-button"}>Zarezerwuj</Button>
+        <Button classname={"services-button"}>
+          {t("buttonText.reservation")}
+        </Button>
       </div>
     </div>
   );

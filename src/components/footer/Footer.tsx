@@ -1,12 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { Button } from "../button/Button";
-import "./footer.scss";
+import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import icons from "../db/icons.json";
 import contact from "../db/contact.json";
-import { Link, useLocation } from "react-router-dom";
+import logo from "/img/logo/Salmed_logo_poziom_biale.svg";
+import "./footer.scss";
 
 export const Footer = () => {
+  const { t } = useTranslation("translation");
   const location = useLocation();
   const isWelcomeScreen = location.pathname === "/";
   if (isWelcomeScreen) {
@@ -14,8 +17,13 @@ export const Footer = () => {
   }
   return (
     <div className="footer-wrapper">
+      <Link className="privacy-policy" to="privacy-policy">
+        {t("privacyPolicy.policy")}
+      </Link>
       <div className="footer-contact">
-        <Button classname={"footer-button"}>Umów Wizytę</Button>
+        <Button classname={"footer-button"}>
+          {t("buttonText.reservation")}
+        </Button>
         <a href={`tel:+48${contact.telephone}`}>
           <div className="footer-contat-links">
             <FontAwesomeIcon icon={icons.telephone as IconProp} />
@@ -35,9 +43,9 @@ export const Footer = () => {
           </div>
         </a>
       </div>
-      <Link className="privacy-policy" to="privacy-policy">
-        Polityka prywatności
-      </Link>
+      <a href="www.sal-med.pl" className="salmed-clinic">
+        <img src={logo} alt="" />
+      </a>
       <div className="solutionsby"></div>
     </div>
   );

@@ -80,5 +80,13 @@
   "welcomeScreen": {
     "center": "Centrum Leczenia Marihuaną Leczniczą",
     "clinic": "Gabinet Lekarski Internistyczno Pediatryczny"
-  }
+  },
+  "contact": {
+    "contact": "Kontakt:",
+    "telephoneNumber": "Numer Telefonu:",
+    "emailAdress": "Adres e-mail",
+    "adress": "Adres"
+  },
+  "buttonText": { "reservation": "Umów Wizytę" },
+  "privacyPolicy": { "policy": "Polityka Prywatności" }
 }

@@ -1,22 +1,22 @@
 {
   "services": {
-    "descryption.one": "Test",
-    "descryption.two": "Wizyta dzieci zdrowych",
-    "descryption.three": "Wizyta bez objawów infekcji",
-    "name.one": "Pediatria ",
-    "name.two": "Internista ",
-    "more": "więcej..."
+    "descryption.one": "respiratory tract infections (e.g fever, stuffy/runny nose, cough)",
+    "descryption.two": "consultations without signs of respiratory tract infection",
+    "descryption.three": "Consultations without signs of respiratory tract infection",
+    "name.one": "General practicioner - PEDIATRIC  population",
+    "name.two": "General practicioner  - ADULT population",
+    "more": "further information..."
   },
   "servicesContent": {
-    "visitOneHeader": "Wizyta Infekcyjna",
-    "visitOne": "Wizyta odbywają się wyłącznie w trybie stacjonarnym. Pacjent > 2r.ż proszony jest o zakrywaniu ust ORAZ nosa maską ochronną",
-    "visitPriceWekk": "Wizyta w tygodniu",
-    "visitPriceWeekend": "Wizyta w Weekend",
-    "visitTwoHeader": "Wizyty dzieci zdrowych",
-    "visitTwo": "preferowana wizyta stacjonarna ale możliwość przeprowadzenia wizytę w trybie e-wizyty (teleporady lub online)",
-    "vistiThreeHeader": "Wizyty internistyczne bez objawów infekcji.",
-    "visitThree": "Wizyta Internistyczna dla osób powyżej 18 roku życia. Wizyta dla osób z objawami infekcji",
-    "visitFour": "Wizyta Internistyczna dla osób powyżej 18 roku życia. Wizyta bez objawów infekcji "
+    "visitOneHeader": "Respiratory tract infections (fever, stuffy/runny nose, cough)",
+    "visitOne": "In-office visit is mandatory. Patients above 2 years of age are kindly asked to cover their mouth AND nose with a protective mask",
+    "visitPriceWekk": "Consultations during weekdays",
+    "visitPriceWeekend": "Consultations during weekends",
+    "visitTwoHeader": "consultations without signs of respiratory tract infection",
+    "visitTwo": "Stationary visit is preferred, although electronic consultation (telephone or online) is also possible.",
+    "vistiThreeHeader": "Consultations without signs of respiratory tract infection",
+    "visitThree": "ADULT population (patient above 18 years of age); Consultation for patients with respiratory tract infections (e.g fever, stuffy/runny nose, cough).",
+    "visitFour": "ADULT population (patient above 18 years of age. Consultations without signs of respiratory tract infection"
   },
   "aboutMeSection": {
     "name": "Adam Salbert",
@@ -76,5 +76,17 @@
       "text": "Salmed reserves the right to make changes to this privacy policy. Any changes will be published on our website."
     },
     "ending": "This privacy policy was last updated on September 24, 2023. If you have any questions or concerns about our privacy policy, please contact us at salbert@sal-med.pl. Thank you for your trust and for using Salmed's services."
-  }
+  },
+  "welcomeScreen": {
+    "center": "Medical Marijuana Treatment Center",
+    "clinic": "Adults and Pediatric Medical Clinic"
+  },
+  "contact": {
+    "contact": "Contact:",
+    "telephoneNumber": "Phone Number:",
+    "emailAdress": "E-mail adress",
+    "adress": "Address"
+  },
+  "buttonText": { "reservation": "Schedule a doctor's appointment" },
+  "privacyPolicy": { "policy": "Privacy policy" }
 }

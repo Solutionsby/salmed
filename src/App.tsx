@@ -20,9 +20,9 @@ import {
   faMobileAlt,
   faEnvelope,
   faMapMarkerAlt,
+  faClinicMedical,
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
-
 // Importuje tłumaczenia
 import translationEN from "./locales/en/translation.json";
 import translationPL from "./locales/pl/translation.json";
@@ -48,7 +48,8 @@ library.add(
   faStethoscope,
   faMobileAlt,
   faEnvelope,
-  faMapMarkerAlt
+  faMapMarkerAlt,
+  faClinicMedical
 );
 
 function App() {

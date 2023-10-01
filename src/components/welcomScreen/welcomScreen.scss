@@ -7,13 +7,15 @@
 }
 .ball {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: absolute;
   border-radius: 10px;
   left: 50%;
   top: 15vh;
   transform: translate(-50%);
-  height: 20vh;
+  height: 25vh;
   width: 70%;
   background-color: green;
   animation: ball 2s;
@@ -24,17 +26,26 @@
   background-color: $primary-color;
   animation: ballSecond 2s;
 }
+
 .ball a {
+  display: flex;
+  flex-direction: column;
   color: white;
   font-size: 4vh;
-  display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 90%;
+  width: 98%;
   height: 100%;
   text-decoration: none;
   animation: text 2s;
+  overflow: hidden;
+  svg {
+    font-size: 4.5vh;
+  }
+  img {
+    width: 20vh;
+  }
 }
 @keyframes text {
   0% {

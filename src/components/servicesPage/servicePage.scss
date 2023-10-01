@@ -16,8 +16,8 @@
       justify-content: space-around;
       align-items: center;
       background-color: $primary-color;
-      height: 25vh;
-      width: 80%;
+      height: 40vh;
+      width: 90%;
       transition: 0.8s;
       &:hover {
         box-sizing: border-box;
@@ -39,7 +39,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 50%;
+          height: 40%;
           width: 100%;
           font-size: 45px;
           overflow: hidden;
@@ -49,7 +49,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          height: 50%;
+          height: 60%;
           font-size: 18px;
           color: white;
           font-family: $font;
@@ -93,9 +93,16 @@
       flex-wrap: wrap;
       justify-content: space-around;
       .services-component-wrapper {
+        height: 30vh;
         width: 45%;
         .services-links {
+          .service-icon {
+            height: 40%;
+            font-size: 70px;
+          }
           .service-texts {
+            height: 60%;
+            font-size: 20px;
             p {
               font-size: 17px;
             }
@@ -113,11 +120,18 @@
       flex-wrap: wrap;
       justify-content: space-around;
       .services-component-wrapper {
+        height: 28vh;
         width: 45%;
         .services-links {
+          .service-icon {
+            height: 40%;
+            font-size: 70px;
+          }
           .service-texts {
+            height: 60%;
+            font-size: 24px;
             p {
-              font-size: 17px;
+              font-size: 19px;
             }
           }
         }
