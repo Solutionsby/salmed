@@ -15,6 +15,7 @@
 
 a,
 a:active,
-a:link {
+a:link,
+a:visited {
   text-decoration: none;
 }

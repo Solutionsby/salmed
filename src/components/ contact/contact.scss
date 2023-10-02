@@ -21,17 +21,22 @@
     h1,
     h2 {
       text-align: left;
-      color: $primary-color;
+      color: black;
       font-family: $font;
     }
     a {
       width: 90%;
       font-size: 20px;
       text-align: left;
+      color: black;
       font-family: $secendary-font;
       svg {
         margin-right: 10px;
+        color: $primary-color;
       }
+    }
+    a:visited {
+      color: $primary-color;
     }
   }
 }
@@ -83,13 +88,13 @@
       width: 45%;
       gap: 2px;
       h1 {
-        font-size: 24px;
+        font-size: 32px;
       }
       h2 {
-        font-size: 20px;
+        font-size: 26px;
       }
       a {
-        font-size: 18px;
+        font-size: 26px;
       }
     }
   }
