@@ -84,8 +84,8 @@
   "contact": {
     "contact": "Contact:",
     "telephoneNumber": "Phone Number:",
-    "emailAdress": "E-mail adress",
-    "adress": "Address"
+    "emailAdress": "E-mail adress:",
+    "adress": "Address:"
   },
   "buttonText": { "reservation": "Schedule a doctor's appointment" },
   "privacyPolicy": { "policy": "Privacy policy" }

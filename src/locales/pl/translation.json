@@ -84,8 +84,8 @@
   "contact": {
     "contact": "Kontakt:",
     "telephoneNumber": "Numer Telefonu:",
-    "emailAdress": "Adres e-mail",
-    "adress": "Adres"
+    "emailAdress": "Adres e-mail:",
+    "adress": "Adres:"
   },
   "buttonText": { "reservation": "Umów Wizytę" },
   "privacyPolicy": { "policy": "Polityka Prywatności" }
