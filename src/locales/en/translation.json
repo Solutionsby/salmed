@@ -24,8 +24,8 @@
   },
   "navigation": {
     "aboutMe": "About me",
-    "services": "Services",
-    "priceList": "Tariff",
+    "services": "Consultations",
+    "priceList": "Price list",
     "contact": "Contact"
   },
   "privatyPolicy": {
@@ -79,7 +79,7 @@
   },
   "welcomeScreen": {
     "center": "Medical Marijuana Treatment Center",
-    "clinic": "Adults and Pediatric Medical Clinic"
+    "clinic": "General practitioner's Clinic"
   },
   "contact": {
     "contact": "Contact:",

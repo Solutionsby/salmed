@@ -7,7 +7,7 @@
   align-items: center;
   gap: 20px;
   margin-top: $nav-height;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   .about-me-photo {
     height: 40vh;
     width: 50%;
@@ -17,10 +17,11 @@
   }
   .about-me-description {
     width: 80%;
+    margin-right: 5%;
     font-size: 18px;
     font-family: $secendary-font;
     color: black;
-    text-align: left;
+    text-align: justify;
   }
 }
 @media screen and (max-width: 768px) and (orientation: landscape) {

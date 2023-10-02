@@ -59,6 +59,7 @@ function App() {
         <MainNavigation changeLanguage={i18n.changeLanguage} />
         <ScrollToTopEffect />
         <Routes>
+          {/* <Route path="*" element={<MainPage />} /> */}
           <Route path="/" element={<WelcomScreen />} />
           <Route path="mainPage" element={<MainPage />} />
           <Route path="about" element={<AboutMe />} />
