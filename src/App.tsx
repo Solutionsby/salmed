@@ -12,6 +12,7 @@ import { PrivacyPolicyText } from "./components/policy/privacy-policy-text/Priva
 import { priceComponent } from "./components/db/price.json";
 import { serviceContent } from "./components/db/services.json";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { useEffect, useState } from "react";
 import {
   faUserMd,
   faBriefcaseMedical,
@@ -29,6 +30,7 @@ import translationPL from "./locales/pl/translation.json";
 import ScrollToTopEffect from "./assets/ScrollToTop";
 import { ServicesPages } from "./components/servicesPage/servicesPages/ServicesPages";
 import { WelcomScreen } from "./components/welcomScreen/WelcomeScreen";
+import ReactGa from "react-ga";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -53,13 +55,45 @@ library.add(
 );
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize("G-RHW479BGCS");
+    checkPrivacyAccepted();
+  }, []);
+  const [privacAccepted, setPrivacyAccepted] = useState<boolean | null>(null);
+
+  const handlePrivacy = (decision: boolean) => {
+    setPrivacyAccepted(decision);
+    if (decision === true) {
+      const expirationDate = new Date();
+      expirationDate.setMonth(expirationDate.getMonth() + 2);
+      document.cookie = `privacyAccepted=true; expires=${expirationDate.toUTCString()}; path=/`;
+      ReactGa.pageview(window.location.pathname + window.location.search);
+    } else {
+      setPrivacyAccepted(decision === false);
+      ReactGa.pageview(
+        window.location.pathname + window.location.search,
+        undefined,
+        "privacy-declined"
+      );
+    }
+  };
+  const checkPrivacyAccepted = () => {
+    const cookies = document.cookie.split(";");
+    for (const cookie of cookies) {
+      const [name, value] = cookie.split("=");
+      if (name.trim() === "privacyAccepted") {
+        setPrivacyAccepted(value === "true");
+        break;
+      }
+    }
+  };
+  console.log(privacAccepted);
   return (
     <Router>
       <div className="app-wrapper">
         <MainNavigation changeLanguage={i18n.changeLanguage} />
         <ScrollToTopEffect />
         <Routes>
-          {/* <Route path="*" element={<MainPage />} /> */}
           <Route path="/" element={<WelcomScreen />} />
           <Route path="mainPage" element={<MainPage />} />
           <Route path="about" element={<AboutMe />} />
@@ -103,7 +137,10 @@ function App() {
             }
           />
         </Routes>
-        <PrivacyPolicy />
+        <PrivacyPolicy
+          privacAccepted={privacAccepted}
+          handlePrivacy={handlePrivacy}
+        />
         <Footer />
       </div>
     </Router>

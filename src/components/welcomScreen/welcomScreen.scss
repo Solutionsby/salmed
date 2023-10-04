@@ -13,12 +13,12 @@
   align-items: center;
   height: 45vh;
   width: 100%;
-  background-image: url("../../../public/img/welcomePhoto/welcomeTwo.jpg");
+  background-image: url("./img/welcomePhoto/welcomeTwo.jpg");
   background-size: cover;
   background-position: center;
 }
 .clinic-bgc {
-  background-image: url("../../../public/img/welcomePhoto/welcomeOne.jpg");
+  background-image: url("./img/welcomePhoto/welcomeOne.jpg");
 }
 
 .ball {
@@ -27,12 +27,14 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  border: 1px solid black;
   height: 50%;
   width: 80%;
   background-color: rgba(0, 128, 0, 0.4);
   animation: ball 0.5s;
   cursor: pointer;
 }
+
 .second-ball {
   background-color: rgba(0, 0, 255, 0.4);
   animation: ball 0.5s;

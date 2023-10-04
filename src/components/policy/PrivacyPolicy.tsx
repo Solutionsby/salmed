@@ -1,36 +1,41 @@
 import { Link } from "react-router-dom";
 import "./privacyPolicy.scss";
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
 
-export const PrivacyPolicy = () => {
-  const [privacAccepted, setPrivacyAccepted] = useState<boolean | null>(null);
+interface PrivatyPolicy {
+  privacAccepted: boolean | null;
+  handlePrivacy: (decision: boolean) => void;
+}
+
+export const PrivacyPolicy: React.FC<PrivatyPolicy> = ({
+  privacAccepted,
+  handlePrivacy,
+}) => {
+  // const [privacAccepted, setPrivacyAccepted] = useState<boolean | null>(null);
   const { t } = useTranslation("translation");
 
-  const handlePrivacy = (decision: boolean) => {
-    setPrivacyAccepted(decision);
-    if (decision === true) {
-      const expirationDate = new Date();
-      expirationDate.setMonth(expirationDate.getMonth() + 2);
-      document.cookie = `privacyAccepted=true; expires=${expirationDate.toUTCString()}; path=/`;
-    } else {
-      setPrivacyAccepted(decision);
-      // wstrzymanie zbierania danych
-    }
-  };
-  const checkPrivacyAccepted = () => {
-    const cookies = document.cookie.split(";");
-    for (const cookie of cookies) {
-      const [name, value] = cookie.split("=");
-      if (name.trim() === "privacyAccepted") {
-        setPrivacyAccepted(value === "true");
-        break;
-      }
-    }
-  };
-  useEffect(() => {
-    checkPrivacyAccepted();
-  }, []);
+  // const handlePrivacy = (decision: boolean) => {
+  //   setPrivacyAccepted(decision);
+  //   if (decision === true) {
+  //     const expirationDate = new Date();
+  //     expirationDate.setMonth(expirationDate.getMonth() + 2);
+  //     document.cookie = `privacyAccepted=true; expires=${expirationDate.toUTCString()}; path=/`;
+  //     ReactGA.pageview(window.location.pathname + window.location.search);
+  //   } else {
+  //     setPrivacyAccepted(decision);
+  //     ReactGA.pageview(window.location.pathname + window.location.search, null, 'privacy-declined');
+  //   }
+  // };
+  // const checkPrivacyAccepted = () => {
+  //   const cookies = document.cookie.split(";");
+  //   for (const cookie of cookies) {
+  //     const [name, value] = cookie.split("=");
+  //     if (name.trim() === "privacyAccepted") {
+  //       setPrivacyAccepted(value === "true");
+  //       break;
+  //     }
+  //   }
+  // };
 
   if (privacAccepted === null) {
     return (
