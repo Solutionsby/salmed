@@ -15,9 +15,12 @@ declare global {
   }
 }
 
-export const GA_TRACKING_ID = "G-RHW479BGCS";
+import { GA_TRACKING_ID } from "../db/google_tracker.json";
+
+// export const GA_TRACKING_ID = "G-RHW479BGCS";
 
 // Inicjalizacja Google Analytics
+
 export const initGA = () => {
   if (typeof window !== "undefined" && !window.gtag) {
     const script = document.createElement("script");

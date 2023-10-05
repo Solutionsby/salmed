@@ -19,7 +19,6 @@ dist-ssr
 .DS_Store
 public/*
 src/components/db
-src/components/googleAnalitik
 *.suo
 *.ntvs*
 *.njsproj
