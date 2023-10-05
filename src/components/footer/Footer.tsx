@@ -43,7 +43,7 @@ export const Footer = () => {
           </div>
         </a>
       </div>
-      <a href="https://sal-med.pl/" className="salmed-clinic">
+      <a href="https://centrum.sal-med.pl" className="salmed-clinic">
         <img src={logo} alt="" />
       </a>
     </div>

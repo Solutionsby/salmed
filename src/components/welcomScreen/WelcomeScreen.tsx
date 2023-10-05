@@ -11,7 +11,7 @@ export const WelcomScreen = () => {
     <div className="welcome-screen-wrapper">
       <div className="center-bgc background">
         <div className="ball">
-          <a href="www.sal-med.pl">
+          <a href="https://centrum.sal-med.pl">
             {t("welcomeScreen.center")}
             <img src={logo} alt="Logo Centrum Leczenia Marichuana Leczniczą " />
           </a>
