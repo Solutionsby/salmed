@@ -18,9 +18,8 @@ dist-ssr
 .idea
 .DS_Store
 public/*
-src/db/*
-src/googleAnalitik/*
-src/locales/*
+src/components/db
+src/components/googleAnalitik
 *.suo
 *.ntvs*
 *.njsproj
