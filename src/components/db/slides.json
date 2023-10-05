@@ -1,9 +1,0 @@
-{
-  "slides": [
-    { "id": 1, "url": "/img/slides/Slider1.jpg" },
-    { "id": 2, "url": "/img/slides/Slider2.jpg" },
-    { "id": 3, "url": "/img/slides/Slider3.jpg" },
-    { "id": 4, "url": "/img/slides/Slider4.jpg" },
-    { "id": 5, "url": "/img/slides/Slider5.jpg" }
-  ]
-}
