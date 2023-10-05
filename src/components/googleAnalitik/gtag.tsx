@@ -17,7 +17,7 @@ declare global {
 
 import { GA_TRACKING_ID } from "../db/google_tracker.json";
 
-// export const GA_TRACKING_ID = "G-RHW479BGCS";
+
 
 // Inicjalizacja Google Analytics
 
