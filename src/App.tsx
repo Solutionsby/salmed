@@ -9,9 +9,13 @@ import { AboutMe } from "./components/aboutMe/AbouteMe";
 import { PriceList } from "./components/ priceList/PriceList";
 import { Contact } from "./components/ contact/Contact";
 import { PrivacyPolicyText } from "./components/policy/privacy-policy-text/PrivacyPolicyText";
+import { ServicesPages } from "./components/servicesPage/servicesPages/ServicesPages";
+import { WelcomScreen } from "./components/welcomScreen/WelcomeScreen";
 import { priceComponent } from "./components/db/price.json";
 import { serviceContent } from "./components/db/services.json";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { useEffect, useState } from "react";
+import { initGA, logPageView } from "./components/googleAnalitik/gtag";
 import {
   faUserMd,
   faBriefcaseMedical,
@@ -22,13 +26,10 @@ import {
   faMapMarkerAlt,
   faClinicMedical,
 } from "@fortawesome/free-solid-svg-icons";
-import "./App.css";
-// Importuje tłumaczenia
 import translationEN from "./locales/en/translation.json";
 import translationPL from "./locales/pl/translation.json";
 import ScrollToTopEffect from "./assets/ScrollToTop";
-import { ServicesPages } from "./components/servicesPage/servicesPages/ServicesPages";
-import { WelcomScreen } from "./components/welcomScreen/WelcomeScreen";
+import "./App.css";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -36,7 +37,7 @@ i18n.use(initReactI18next).init({
     pl: { translation: translationPL },
   },
   lng: "pl",
-  fallbackLng: "pl", // zmienić na Angielski
+  fallbackLng: "en",
   interpolation: {
     escapeValue: false,
   },
@@ -53,13 +54,40 @@ library.add(
 );
 
 function App() {
+  const [privacAccepted, setPrivacyAccepted] = useState<boolean | null>(null);
+  useEffect(() => {
+    if (privacAccepted) {
+      logPageView(window.location.pathname);
+    }
+    checkPrivacyAccepted();
+  }, [privacAccepted, window.location.pathname]);
+
+  const handlePrivacy = (decision: boolean) => {
+    setPrivacyAccepted(decision);
+    if (decision === true) {
+      const expirationDate = new Date();
+      expirationDate.setMonth(expirationDate.getMonth() + 2);
+      document.cookie = `privacyAccepted=true; expires=${expirationDate.toUTCString()}; path=/`;
+      initGA();
+    }
+  };
+  const checkPrivacyAccepted = () => {
+    const cookies = document.cookie.split(";");
+    for (const cookie of cookies) {
+      const [name, value] = cookie.split("=");
+      if (name.trim() === "privacyAccepted") {
+        setPrivacyAccepted(value === "true");
+        initGA();
+        break;
+      }
+    }
+  };
   return (
     <Router>
       <div className="app-wrapper">
         <MainNavigation changeLanguage={i18n.changeLanguage} />
         <ScrollToTopEffect />
         <Routes>
-          {/* <Route path="*" element={<MainPage />} /> */}
           <Route path="/" element={<WelcomScreen />} />
           <Route path="mainPage" element={<MainPage />} />
           <Route path="about" element={<AboutMe />} />
@@ -103,7 +131,10 @@ function App() {
             }
           />
         </Routes>
-        <PrivacyPolicy />
+        <PrivacyPolicy
+          privacAccepted={privacAccepted}
+          handlePrivacy={handlePrivacy}
+        />
         <Footer />
       </div>
     </Router>
